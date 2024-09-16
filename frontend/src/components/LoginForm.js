@@ -42,16 +42,16 @@ const LoginForm = ({ setLoggedIn, setUser }) => {
                     <input placeholder='Username' id='username' value={username} type='text' className='form-control' onChange={(e) => setUsername(e.target.value)} /> 
                     <input placeholder='Password' id='password' type='password' className='form-control' value={password} onChange={(e) => setPassword(e.target.value)} /> 
                     {error && <p className="text-danger">{error}</p>}
-					<div className='mt-3'>
-						<div className="d-grid gap-2">
-							<button className="btn btn-lg btn-primary" type='button' onClick={handleLogin}>Sign In</button> 
-						</div>
-					</div>
-					<div className='mt-4'>
-						<div className="text-center"> 
-							<p>Not already registered? <a href="/signup">Register</a></p> 
-						</div> 
-					</div>
+			<div className='mt-3'>
+				<div className="d-grid gap-2">
+					<button className="btn btn-lg btn-primary" type='button' onClick={handleLogin}>Sign In</button> 
+				</div>
+			</div>
+			<div className='mt-4'>
+				<div className="text-center"> 
+					<p>Not already registered? <a href="/signup">Register</a></p> 
+				</div> 
+			</div>
                 </MDBContainer> 
             </div> 
         </div> 
